@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//usr/local/bin/**)",
+      "Read(//Users/smimran@zaizi.com/.nvm/versions/node/**)",
+      "Bash(brew list *)"
+    ]
+  }
+}
