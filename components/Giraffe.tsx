@@ -1,6 +1,7 @@
 "use client";
 import { useRef, useEffect, useMemo } from "react";
 import { useGLTF } from "@react-three/drei";
+import { idlePreload } from "@/lib/preload";
 import { useFrame } from "@react-three/fiber";
 import { SkeletonUtils } from "three-stdlib";
 import * as THREE from "three";
@@ -94,4 +95,4 @@ export default function Giraffe({
   );
 }
 
-useGLTF.preload("/models/girafe.glb");
+idlePreload(["/models/girafe.glb"]);

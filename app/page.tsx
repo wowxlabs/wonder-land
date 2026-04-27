@@ -6,7 +6,7 @@ const Experience = dynamic(() => import("@/components/Experience"), {
   loading: () => (
     <div style={{
       width: "100vw", height: "100vh",
-      backgroundImage: `url('${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/game.png')`,
+      backgroundImage: `url('${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/game.webp')`,
       backgroundSize: "cover", backgroundPosition: "center",
       display: "flex", alignItems: "center", justifyContent: "center",
       position: "relative",

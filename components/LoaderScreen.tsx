@@ -119,7 +119,7 @@ export default function LoaderScreen({ show, isReady = false, onEnter }: Props) 
       {/* Background image */}
       <div style={{
         position: "absolute", inset: 0,
-        backgroundImage: `url('${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/game.png')`,
+        backgroundImage: `url('${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/game.webp')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

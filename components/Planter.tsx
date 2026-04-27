@@ -1,6 +1,7 @@
 "use client";
 import { useMemo } from "react";
 import { useGLTF, Clone } from "@react-three/drei";
+import { idlePreload } from "@/lib/preload";
 import type { GLTF } from "three-stdlib";
 import { sampleTerrainHeight } from "@/lib/terrain";
 
@@ -40,4 +41,4 @@ export default function Planter({ position, flowerIndex = 0 }: Props) {
   );
 }
 
-FLOWER_MODELS.forEach((m) => useGLTF.preload(m));
+idlePreload(FLOWER_MODELS);

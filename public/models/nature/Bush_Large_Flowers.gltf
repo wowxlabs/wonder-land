@@ -1,252 +1,251 @@
 {
-	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.0.44",
-		"version":"2.0"
-	},
-	"scene":0,
-	"scenes":[
-		{
-			"name":"Scene",
-			"nodes":[
-				0
-			]
-		}
-	],
-	"nodes":[
-		{
-			"mesh":0,
-			"name":"Bush_Large_Flowers"
-		}
-	],
-	"materials":[
-		{
-			"alphaCutoff":0.20000000298023224,
-			"alphaMode":"MASK",
-			"doubleSided":true,
-			"name":"Flowers",
-			"pbrMetallicRoughness":{
-				"baseColorTexture":{
-					"index":0
-				},
-				"metallicFactor":0
-			}
-		},
-		{
-			"alphaCutoff":0.20000000298023224,
-			"alphaMode":"MASK",
-			"doubleSided":true,
-			"name":"Leaves_GiantPine",
-			"pbrMetallicRoughness":{
-				"baseColorTexture":{
-					"index":1
-				},
-				"metallicFactor":0
-			}
-		}
-	],
-	"meshes":[
-		{
-			"name":"tree.010",
-			"primitives":[
-				{
-					"attributes":{
-						"COLOR_0":0,
-						"POSITION":1,
-						"NORMAL":2,
-						"TEXCOORD_0":3
-					},
-					"indices":4,
-					"material":0
-				},
-				{
-					"attributes":{
-						"COLOR_0":5,
-						"POSITION":6,
-						"NORMAL":7,
-						"TEXCOORD_0":8
-					},
-					"indices":9,
-					"material":1
-				}
-			]
-		}
-	],
-	"textures":[
-		{
-			"sampler":0,
-			"source":0
-		},
-		{
-			"sampler":0,
-			"source":1
-		}
-	],
-	"images":[
-		{
-			"mimeType":"image/png",
-			"name":"Flowers",
-			"uri":"Flowers.png"
-		},
-		{
-			"mimeType":"image/png",
-			"name":"Leaves_GiantPine_C",
-			"uri":"Leaves_GiantPine_C.png"
-		}
-	],
-	"accessors":[
-		{
-			"bufferView":0,
-			"componentType":5126,
-			"count":549,
-			"type":"VEC4"
-		},
-		{
-			"bufferView":1,
-			"componentType":5126,
-			"count":549,
-			"max":[
-				2.002925395965576,
-				2.83725643157959,
-				1.763440728187561
-			],
-			"min":[
-				-1.7995274066925049,
-				0.1615467667579651,
-				-1.404332160949707
-			],
-			"type":"VEC3"
-		},
-		{
-			"bufferView":2,
-			"componentType":5126,
-			"count":549,
-			"type":"VEC3"
-		},
-		{
-			"bufferView":3,
-			"componentType":5126,
-			"count":549,
-			"type":"VEC2"
-		},
-		{
-			"bufferView":4,
-			"componentType":5123,
-			"count":1035,
-			"type":"SCALAR"
-		},
-		{
-			"bufferView":5,
-			"componentType":5126,
-			"count":1728,
-			"type":"VEC4"
-		},
-		{
-			"bufferView":6,
-			"componentType":5126,
-			"count":1728,
-			"max":[
-				1.8775538206100464,
-				2.833508014678955,
-				1.8439654111862183
-			],
-			"min":[
-				-1.7178152799606323,
-				-0.41830262541770935,
-				-1.8215556144714355
-			],
-			"type":"VEC3"
-		},
-		{
-			"bufferView":7,
-			"componentType":5126,
-			"count":1728,
-			"type":"VEC3"
-		},
-		{
-			"bufferView":8,
-			"componentType":5126,
-			"count":1728,
-			"type":"VEC2"
-		},
-		{
-			"bufferView":9,
-			"componentType":5123,
-			"count":2592,
-			"type":"SCALAR"
-		}
-	],
-	"bufferViews":[
-		{
-			"buffer":0,
-			"byteLength":8784,
-			"byteOffset":0,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":6588,
-			"byteOffset":8784,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":6588,
-			"byteOffset":15372,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":4392,
-			"byteOffset":21960,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":2070,
-			"byteOffset":26352,
-			"target":34963
-		},
-		{
-			"buffer":0,
-			"byteLength":27648,
-			"byteOffset":28424,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":20736,
-			"byteOffset":56072,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":20736,
-			"byteOffset":76808,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":13824,
-			"byteOffset":97544,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":5184,
-			"byteOffset":111368,
-			"target":34963
-		}
-	],
-	"samplers":[
-		{
-			"magFilter":9729,
-			"minFilter":9987
-		}
-	],
-	"buffers":[
-		{
-			"byteLength":116552,
-			"uri":"Bush_Large_Flowers.bin"
-		}
-	]
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v4.0.44",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "Bush_Large_Flowers"
+    }
+  ],
+  "materials": [
+    {
+      "alphaCutoff": 0.20000000298023224,
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "name": "Flowers",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "alphaCutoff": 0.20000000298023224,
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "name": "Leaves_GiantPine",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "name": "tree.010",
+      "primitives": [
+        {
+          "attributes": {
+            "COLOR_0": 1,
+            "POSITION": 2,
+            "NORMAL": 3,
+            "TEXCOORD_0": 4
+          },
+          "indices": 0,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "COLOR_0": 0,
+                "POSITION": 1,
+                "NORMAL": 2,
+                "TEXCOORD_0": 3
+              }
+            }
+          }
+        },
+        {
+          "attributes": {
+            "COLOR_0": 6,
+            "POSITION": 7,
+            "NORMAL": 8,
+            "TEXCOORD_0": 9
+          },
+          "indices": 5,
+          "material": 1,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 1,
+              "attributes": {
+                "COLOR_0": 0,
+                "POSITION": 1,
+                "NORMAL": 2,
+                "TEXCOORD_0": 3
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/png",
+      "name": "Flowers",
+      "uri": "Flowers.webp"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "Leaves_GiantPine_C",
+      "uri": "Leaves_GiantPine_C.webp"
+    }
+  ],
+  "accessors": [
+    {
+      "componentType": 5123,
+      "count": 1035,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 827,
+      "type": "VEC4"
+    },
+    {
+      "componentType": 5126,
+      "count": 827,
+      "max": [
+        2.0047829693913983,
+        2.838310073367782,
+        1.7646881035029973
+      ],
+      "min": [
+        -1.801384980118327,
+        0.15968919333214288,
+        -1.4061897343755292
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 827,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 827,
+      "type": "VEC2"
+    },
+    {
+      "componentType": 5123,
+      "count": 2592,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 1728,
+      "type": "VEC4"
+    },
+    {
+      "componentType": 5126,
+      "count": 1728,
+      "max": [
+        1.8796599230419209,
+        2.8353621052222304,
+        1.8457560907297736
+      ],
+      "min": [
+        -1.7196059595041877,
+        -0.4200933049612646,
+        -1.823346294014991
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 1728,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 1728,
+      "type": "VEC2"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 3821
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3824,
+      "byteLength": 11988
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "buffers": [
+    {
+      "name": "Bush_Large_Flowers",
+      "byteLength": 15816,
+      "uri": "Bush_Large_Flowers.bin"
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression"
+  ]
 }

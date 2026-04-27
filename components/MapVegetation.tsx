@@ -1,6 +1,7 @@
 "use client";
 import { useMemo, useEffect } from "react";
 import { useGLTF, Clone } from "@react-three/drei";
+import { idlePreload } from "@/lib/preload";
 import { useLoader, useFrame } from "@react-three/fiber";
 import { SVGLoader } from "three/examples/jsm/loaders/SVGLoader.js";
 import type { GLTF } from "three-stdlib";
@@ -230,9 +231,7 @@ const KAYKIT_BUSHES = [
   "/models/nature/Bush_4_F_Color1.gltf",
 ];
 
-[...COMMON_TREES, ...PINES, ...TWISTED, ...ROCKS, ...BUSHES, ...FLOWERS, ...FERNS, ...DEAD_TREES, ...FLOWER_GROUPS, ...GRASSES].forEach(
-  (p) => useGLTF.preload(p)
-);
+idlePreload([...COMMON_TREES, ...PINES, ...TWISTED, ...ROCKS, ...BUSHES, ...FLOWERS, ...FERNS, ...DEAD_TREES, ...FLOWER_GROUPS, ...GRASSES]);
 
 type ModelSet = "common" | "pine" | "twisted" | "rock" | "bush" | "flower" | "fern" | "dead" | "flowergroup" | "grass";
 interface Zone {
@@ -429,7 +428,7 @@ const PEBBLE_PATHS = [
   "/models/nature/Pebble_Square_2.gltf",
   "/models/nature/Pebble_Square_3.gltf",
 ];
-[...ALL_GRASS_PATHS, ...ROCK_PATHS, ...BUSH_PATHS, ...COASTAL_GRASS_PATHS, ...COASTAL_ROCK_PATHS, ...PEBBLE_PATHS].forEach(p => useGLTF.preload(p));
+idlePreload([...ALL_GRASS_PATHS, ...ROCK_PATHS, ...BUSH_PATHS, ...COASTAL_GRASS_PATHS, ...COASTAL_ROCK_PATHS, ...PEBBLE_PATHS]);
 
 type GrassPos = [number, number, number, number, number]; // x y z scale rot
 

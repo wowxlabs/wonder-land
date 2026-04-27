@@ -1,136 +1,147 @@
 {
-    "asset" : {
-        "generator" : "Khronos glTF Blender I/O v3.4.50",
-        "version" : "2.0"
-    },
-    "scene" : 0,
-    "scenes" : [
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v3.4.50",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "Tree_Bare_1_C_Color1"
+    }
+  ],
+  "materials": [
+    {
+      "name": "forest",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.6000000238418579,
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Tree_Bare_1_C_Color1",
+      "primitives": [
         {
-            "name" : "Scene",
-            "nodes" : [
-                0
-            ]
-        }
-    ],
-    "nodes" : [
-        {
-            "mesh" : 0,
-            "name" : "Tree_Bare_1_C_Color1"
-        }
-    ],
-    "materials" : [
-        {
-            "name" : "forest",
-            "pbrMetallicRoughness" : {
-                "baseColorTexture" : {
-                    "index" : 0
-                },
-                "metallicFactor" : 0,
-                "roughnessFactor" : 0.6000000238418579
+          "attributes": {
+            "POSITION": 1,
+            "TEXCOORD_0": 2,
+            "NORMAL": 3
+          },
+          "indices": 0,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "POSITION": 0,
+                "TEXCOORD_0": 1,
+                "NORMAL": 2
+              }
             }
+          }
         }
-    ],
-    "meshes" : [
-        {
-            "name" : "Tree_Bare_1_C_Color1",
-            "primitives" : [
-                {
-                    "attributes" : {
-                        "POSITION" : 0,
-                        "TEXCOORD_0" : 1,
-                        "NORMAL" : 2
-                    },
-                    "indices" : 3,
-                    "material" : 0
-                }
-            ]
-        }
-    ],
-    "textures" : [
-        {
-            "sampler" : 0,
-            "source" : 0
-        }
-    ],
-    "images" : [
-        {
-            "mimeType" : "image/png",
-            "name" : "forest_texture",
-            "uri" : "forest_texture.png"
-        }
-    ],
-    "accessors" : [
-        {
-            "bufferView" : 0,
-            "componentType" : 5126,
-            "count" : 938,
-            "max" : [
-                2.3702781200408936,
-                4.863067150115967,
-                0.6788632869720459
-            ],
-            "min" : [
-                -1.3666609525680542,
-                -0.3923197388648987,
-                -1.3953111171722412
-            ],
-            "type" : "VEC3"
-        },
-        {
-            "bufferView" : 1,
-            "componentType" : 5126,
-            "count" : 938,
-            "type" : "VEC2"
-        },
-        {
-            "bufferView" : 2,
-            "componentType" : 5126,
-            "count" : 938,
-            "type" : "VEC3"
-        },
-        {
-            "bufferView" : 3,
-            "componentType" : 5123,
-            "count" : 2808,
-            "type" : "SCALAR"
-        }
-    ],
-    "bufferViews" : [
-        {
-            "buffer" : 0,
-            "byteLength" : 11256,
-            "byteOffset" : 0,
-            "target" : 34962
-        },
-        {
-            "buffer" : 0,
-            "byteLength" : 7504,
-            "byteOffset" : 11256,
-            "target" : 34962
-        },
-        {
-            "buffer" : 0,
-            "byteLength" : 11256,
-            "byteOffset" : 18760,
-            "target" : 34962
-        },
-        {
-            "buffer" : 0,
-            "byteLength" : 5616,
-            "byteOffset" : 30016,
-            "target" : 34963
-        }
-    ],
-    "samplers" : [
-        {
-            "magFilter" : 9729,
-            "minFilter" : 9987
-        }
-    ],
-    "buffers" : [
-        {
-            "byteLength" : 35632,
-            "uri" : "Tree_Bare_1_C_Color1.bin"
-        }
-    ]
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/png",
+      "name": "forest_texture",
+      "uri": "forest_texture.webp"
+    }
+  ],
+  "accessors": [
+    {
+      "componentType": 5123,
+      "count": 2808,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 992,
+      "max": [
+        2.3739832571266803,
+        4.8656345105893335,
+        0.6816835057811153
+      ],
+      "min": [
+        -1.3692283130414205,
+        -0.394887099338265,
+        -1.3978784776456075
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 992,
+      "type": "VEC2"
+    },
+    {
+      "componentType": 5126,
+      "count": 992,
+      "type": "VEC3"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 4462
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "buffers": [
+    {
+      "name": "Tree_Bare_1_C_Color1",
+      "byteLength": 4464,
+      "uri": "Tree_Bare_1_C_Color1.bin"
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression"
+  ]
 }

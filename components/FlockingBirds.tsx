@@ -2,6 +2,7 @@
 import { useRef, useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
+import { idlePreload } from "@/lib/preload";
 import * as THREE from "three";
 import { BoidBird } from "@/models/BoidBird";
 import { BoidVector } from "@/models/BoidVector";
@@ -239,4 +240,4 @@ export default function FlockingBirds() {
   );
 }
 
-useGLTF.preload("/models/bird.gltf");
+idlePreload(["/models/bird.gltf"]);

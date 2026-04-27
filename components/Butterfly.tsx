@@ -1,6 +1,7 @@
 "use client";
 import { useRef, useMemo } from "react";
 import { useGLTF } from "@react-three/drei";
+import { idlePreload } from "@/lib/preload";
 import { useFrame } from "@react-three/fiber";
 import { SkeletonUtils } from "three-stdlib";
 import * as THREE from "three";
@@ -73,4 +74,4 @@ export default function Butterfly({ position, scale = 0.12, phaseOffset = 0 }: P
   );
 }
 
-useGLTF.preload("/models/butterfly.glb");
+idlePreload(["/models/butterfly.glb"]);

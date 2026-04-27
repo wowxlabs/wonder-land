@@ -1,6 +1,7 @@
 "use client";
 import { useMemo, useEffect } from "react";
 import { useGLTF } from "@react-three/drei";
+import { idlePreload } from "@/lib/preload";
 import type { GLTF } from "three-stdlib";
 import * as THREE from "three";
 import { pip, edgeDist, sampleTerrainHeight } from "@/lib/terrain";
@@ -26,8 +27,7 @@ const GRASS_PATHS = [
   "/models/nature/Grass_Wispy_Tall.gltf",
 ];
 
-ROCK_PATHS.forEach(p => useGLTF.preload(p));
-GRASS_PATHS.forEach(p => useGLTF.preload(p));
+idlePreload([...ROCK_PATHS, ...GRASS_PATHS]);
 
 type Pos5 = [number, number, number, number, number]; // x y z scale rot
 

@@ -1,263 +1,263 @@
 {
-	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.0.44",
-		"version":"2.0"
-	},
-	"scene":0,
-	"scenes":[
-		{
-			"name":"Scene",
-			"nodes":[
-				0
-			]
-		}
-	],
-	"nodes":[
-		{
-			"mesh":0,
-			"name":"CherryBlossom_1"
-		}
-	],
-	"materials":[
-		{
-			"alphaCutoff":0.20000000298023224,
-			"alphaMode":"MASK",
-			"doubleSided":true,
-			"name":"Bark_NormalTree",
-			"normalTexture":{
-				"index":0
-			},
-			"pbrMetallicRoughness":{
-				"baseColorTexture":{
-					"index":1
-				},
-				"metallicFactor":0
-			}
-		},
-		{
-			"alphaMode":"BLEND",
-			"doubleSided":true,
-			"name":"Leaves_CherryBlossom",
-			"pbrMetallicRoughness":{
-				"baseColorTexture":{
-					"index":2
-				},
-				"metallicFactor":0
-			}
-		}
-	],
-	"meshes":[
-		{
-			"name":"tree.013",
-			"primitives":[
-				{
-					"attributes":{
-						"COLOR_0":0,
-						"POSITION":1,
-						"NORMAL":2,
-						"TEXCOORD_0":3
-					},
-					"indices":4,
-					"material":0
-				},
-				{
-					"attributes":{
-						"COLOR_0":5,
-						"POSITION":6,
-						"NORMAL":7,
-						"TEXCOORD_0":8
-					},
-					"indices":9,
-					"material":1
-				}
-			]
-		}
-	],
-	"textures":[
-		{
-			"sampler":0,
-			"source":0
-		},
-		{
-			"sampler":0,
-			"source":1
-		},
-		{
-			"sampler":0,
-			"source":2
-		}
-	],
-	"images":[
-		{
-			"mimeType":"image/png",
-			"name":"Bark_NormalTree_Normal",
-			"uri":"Bark_NormalTree_Normal.png"
-		},
-		{
-			"mimeType":"image/png",
-			"name":"Bark_NormalTree",
-			"uri":"Bark_NormalTree.png"
-		},
-		{
-			"mimeType":"image/png",
-			"name":"Leaves_CherryBlossom_C",
-			"uri":"Leaves_CherryBlossom_C.png"
-		}
-	],
-	"accessors":[
-		{
-			"bufferView":0,
-			"componentType":5126,
-			"count":11878,
-			"type":"VEC4"
-		},
-		{
-			"bufferView":1,
-			"componentType":5126,
-			"count":11878,
-			"max":[
-				3.7631359100341797,
-				12.229462623596191,
-				2.7853715419769287
-			],
-			"min":[
-				-4.053962707519531,
-				-0.210661843419075,
-				-8.084226608276367
-			],
-			"type":"VEC3"
-		},
-		{
-			"bufferView":2,
-			"componentType":5126,
-			"count":11878,
-			"type":"VEC3"
-		},
-		{
-			"bufferView":3,
-			"componentType":5126,
-			"count":11878,
-			"type":"VEC2"
-		},
-		{
-			"bufferView":4,
-			"componentType":5123,
-			"count":27840,
-			"type":"SCALAR"
-		},
-		{
-			"bufferView":5,
-			"componentType":5126,
-			"count":7195,
-			"type":"VEC4"
-		},
-		{
-			"bufferView":6,
-			"componentType":5126,
-			"count":7195,
-			"max":[
-				5.883588790893555,
-				13.168240547180176,
-				4.619854927062988
-			],
-			"min":[
-				-6.213872909545898,
-				1.9577397108078003,
-				-10.055851936340332
-			],
-			"type":"VEC3"
-		},
-		{
-			"bufferView":7,
-			"componentType":5126,
-			"count":7195,
-			"type":"VEC3"
-		},
-		{
-			"bufferView":8,
-			"componentType":5126,
-			"count":7195,
-			"type":"VEC2"
-		},
-		{
-			"bufferView":9,
-			"componentType":5123,
-			"count":10788,
-			"type":"SCALAR"
-		}
-	],
-	"bufferViews":[
-		{
-			"buffer":0,
-			"byteLength":190048,
-			"byteOffset":0,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":142536,
-			"byteOffset":190048,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":142536,
-			"byteOffset":332584,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":95024,
-			"byteOffset":475120,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":55680,
-			"byteOffset":570144,
-			"target":34963
-		},
-		{
-			"buffer":0,
-			"byteLength":115120,
-			"byteOffset":625824,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":86340,
-			"byteOffset":740944,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":86340,
-			"byteOffset":827284,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":57560,
-			"byteOffset":913624,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":21576,
-			"byteOffset":971184,
-			"target":34963
-		}
-	],
-	"samplers":[
-		{
-			"magFilter":9729,
-			"minFilter":9987
-		}
-	],
-	"buffers":[
-		{
-			"byteLength":992760,
-			"uri":"CherryBlossom_1.bin"
-		}
-	]
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v4.0.44",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "CherryBlossom_1"
+    }
+  ],
+  "materials": [
+    {
+      "alphaCutoff": 0.20000000298023224,
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "name": "Bark_NormalTree",
+      "normalTexture": {
+        "index": 0,
+        "texCoord": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "name": "Leaves_CherryBlossom",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "name": "tree.013",
+      "primitives": [
+        {
+          "attributes": {
+            "COLOR_0": 1,
+            "POSITION": 2,
+            "NORMAL": 3,
+            "TEXCOORD_0": 4
+          },
+          "indices": 0,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "COLOR_0": 0,
+                "POSITION": 1,
+                "NORMAL": 2,
+                "TEXCOORD_0": 3
+              }
+            }
+          }
+        },
+        {
+          "attributes": {
+            "COLOR_0": 6,
+            "POSITION": 7,
+            "NORMAL": 8,
+            "TEXCOORD_0": 9
+          },
+          "indices": 5,
+          "material": 1,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 1,
+              "attributes": {
+                "COLOR_0": 0,
+                "POSITION": 1,
+                "NORMAL": 2,
+                "TEXCOORD_0": 3
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/png",
+      "name": "Bark_NormalTree_Normal",
+      "uri": "Bark_NormalTree_Normal.webp"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "Bark_NormalTree",
+      "uri": "Bark_NormalTree.webp"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "Leaves_CherryBlossom_C",
+      "uri": "Leaves_CherryBlossom_C.webp"
+    }
+  ],
+  "accessors": [
+    {
+      "componentType": 5123,
+      "count": 27840,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 16084,
+      "type": "VEC4"
+    },
+    {
+      "componentType": 5126,
+      "count": 16084,
+      "max": [
+        3.767454092211122,
+        12.235539870526829,
+        2.7940453975650232
+      ],
+      "min": [
+        -4.060039954450169,
+        -0.21673909034971267,
+        -8.090303855207004
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 16084,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 16084,
+      "type": "VEC2"
+    },
+    {
+      "componentType": 5123,
+      "count": 10788,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 7196,
+      "type": "VEC4"
+    },
+    {
+      "componentType": 5126,
+      "count": 7196,
+      "max": [
+        5.8880289885609916,
+        13.177808709941262,
+        4.627024300225374
+      ],
+      "min": [
+        -6.221042282708284,
+        1.9505703376454147,
+        -10.063021309502718
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 7196,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 7196,
+      "type": "VEC2"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 53502
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 53504,
+      "byteLength": 49810
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "buffers": [
+    {
+      "name": "CherryBlossom_1",
+      "byteLength": 103320,
+      "uri": "CherryBlossom_1.bin"
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression"
+  ]
 }

@@ -1,6 +1,7 @@
 "use client";
 import { useMemo } from "react";
 import { useGLTF, Clone } from "@react-three/drei";
+import { idlePreload } from "@/lib/preload";
 import type { GLTF } from "three-stdlib";
 import { edgeDist, pip, sampleTerrainHeight } from "@/lib/terrain";
 
@@ -87,5 +88,4 @@ export default function GrassPatch({
   );
 }
 
-MODELS.forEach(m => useGLTF.preload(m));
-MODELS_ALT.forEach(m => useGLTF.preload(m));
+idlePreload([...MODELS, ...MODELS_ALT]);

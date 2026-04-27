@@ -1,262 +1,263 @@
 {
-	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.0.44",
-		"version":"2.0"
-	},
-	"scene":0,
-	"scenes":[
-		{
-			"name":"Scene",
-			"nodes":[
-				0
-			]
-		}
-	],
-	"nodes":[
-		{
-			"mesh":0,
-			"name":"GiantPine_2"
-		}
-	],
-	"materials":[
-		{
-			"doubleSided":true,
-			"name":"Bark_Pine",
-			"normalTexture":{
-				"index":0
-			},
-			"pbrMetallicRoughness":{
-				"baseColorTexture":{
-					"index":1
-				},
-				"metallicFactor":0
-			}
-		},
-		{
-			"alphaCutoff":0.20000000298023224,
-			"alphaMode":"MASK",
-			"doubleSided":true,
-			"name":"Leaves_GiantPine",
-			"pbrMetallicRoughness":{
-				"baseColorTexture":{
-					"index":2
-				},
-				"metallicFactor":0
-			}
-		}
-	],
-	"meshes":[
-		{
-			"name":"tree.002",
-			"primitives":[
-				{
-					"attributes":{
-						"COLOR_0":0,
-						"POSITION":1,
-						"NORMAL":2,
-						"TEXCOORD_0":3
-					},
-					"indices":4,
-					"material":0
-				},
-				{
-					"attributes":{
-						"COLOR_0":5,
-						"POSITION":6,
-						"NORMAL":7,
-						"TEXCOORD_0":8
-					},
-					"indices":9,
-					"material":1
-				}
-			]
-		}
-	],
-	"textures":[
-		{
-			"sampler":0,
-			"source":0
-		},
-		{
-			"sampler":0,
-			"source":1
-		},
-		{
-			"sampler":0,
-			"source":2
-		}
-	],
-	"images":[
-		{
-			"mimeType":"image/png",
-			"name":"Bark_PineTree_Normal",
-			"uri":"Bark_PineTree_Normal.png"
-		},
-		{
-			"mimeType":"image/png",
-			"name":"Bark_PineTree",
-			"uri":"Bark_PineTree.png"
-		},
-		{
-			"mimeType":"image/png",
-			"name":"Leaves_GiantPine_C",
-			"uri":"Leaves_GiantPine_C.png"
-		}
-	],
-	"accessors":[
-		{
-			"bufferView":0,
-			"componentType":5126,
-			"count":7900,
-			"type":"VEC4"
-		},
-		{
-			"bufferView":1,
-			"componentType":5126,
-			"count":7900,
-			"max":[
-				3.171092987060547,
-				16.28522300720215,
-				3.799510955810547
-			],
-			"min":[
-				-4.803536415100098,
-				-0.29480433464050293,
-				-4.2281599044799805
-			],
-			"type":"VEC3"
-		},
-		{
-			"bufferView":2,
-			"componentType":5126,
-			"count":7900,
-			"type":"VEC3"
-		},
-		{
-			"bufferView":3,
-			"componentType":5126,
-			"count":7900,
-			"type":"VEC2"
-		},
-		{
-			"bufferView":4,
-			"componentType":5123,
-			"count":17406,
-			"type":"SCALAR"
-		},
-		{
-			"bufferView":5,
-			"componentType":5126,
-			"count":4354,
-			"type":"VEC4"
-		},
-		{
-			"bufferView":6,
-			"componentType":5126,
-			"count":4354,
-			"max":[
-				5.794168472290039,
-				16.609325408935547,
-				5.9890241622924805
-			],
-			"min":[
-				-6.962386131286621,
-				4.093211650848389,
-				-6.458436012268066
-			],
-			"type":"VEC3"
-		},
-		{
-			"bufferView":7,
-			"componentType":5126,
-			"count":4354,
-			"type":"VEC3"
-		},
-		{
-			"bufferView":8,
-			"componentType":5126,
-			"count":4354,
-			"type":"VEC2"
-		},
-		{
-			"bufferView":9,
-			"componentType":5123,
-			"count":4794,
-			"type":"SCALAR"
-		}
-	],
-	"bufferViews":[
-		{
-			"buffer":0,
-			"byteLength":126400,
-			"byteOffset":0,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":94800,
-			"byteOffset":126400,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":94800,
-			"byteOffset":221200,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":63200,
-			"byteOffset":316000,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":34812,
-			"byteOffset":379200,
-			"target":34963
-		},
-		{
-			"buffer":0,
-			"byteLength":69664,
-			"byteOffset":414012,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":52248,
-			"byteOffset":483676,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":52248,
-			"byteOffset":535924,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":34832,
-			"byteOffset":588172,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":9588,
-			"byteOffset":623004,
-			"target":34963
-		}
-	],
-	"samplers":[
-		{
-			"magFilter":9729,
-			"minFilter":9987
-		}
-	],
-	"buffers":[
-		{
-			"byteLength":632592,
-			"uri":"GiantPine_2.bin"
-		}
-	]
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v4.0.44",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "GiantPine_2"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Bark_Pine",
+      "normalTexture": {
+        "index": 0,
+        "texCoord": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "alphaCutoff": 0.20000000298023224,
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "name": "Leaves_GiantPine",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "name": "tree.002",
+      "primitives": [
+        {
+          "attributes": {
+            "COLOR_0": 1,
+            "POSITION": 2,
+            "NORMAL": 3,
+            "TEXCOORD_0": 4
+          },
+          "indices": 0,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "COLOR_0": 0,
+                "POSITION": 1,
+                "NORMAL": 2,
+                "TEXCOORD_0": 3
+              }
+            }
+          }
+        },
+        {
+          "attributes": {
+            "COLOR_0": 6,
+            "POSITION": 7,
+            "NORMAL": 8,
+            "TEXCOORD_0": 9
+          },
+          "indices": 5,
+          "material": 1,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 1,
+              "attributes": {
+                "COLOR_0": 0,
+                "POSITION": 1,
+                "NORMAL": 2,
+                "TEXCOORD_0": 3
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/png",
+      "name": "Bark_PineTree_Normal",
+      "uri": "Bark_PineTree_Normal.webp"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "Bark_PineTree",
+      "uri": "Bark_PineTree.webp"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "Leaves_GiantPine_C",
+      "uri": "Leaves_GiantPine_C.webp"
+    }
+  ],
+  "accessors": [
+    {
+      "componentType": 5123,
+      "count": 17406,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 10305,
+      "type": "VEC4"
+    },
+    {
+      "componentType": 5126,
+      "count": 10305,
+      "max": [
+        3.1827395785769204,
+        16.29332267859533,
+        3.806714117556126
+      ],
+      "min": [
+        -4.811636086493279,
+        -0.3029040060336845,
+        -4.236259575873162
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 10305,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 10305,
+      "type": "VEC2"
+    },
+    {
+      "componentType": 5123,
+      "count": 4794,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 4678,
+      "type": "VEC4"
+    },
+    {
+      "componentType": 5126,
+      "count": 4678,
+      "max": [
+        5.8004003016029735,
+        16.61295674053354,
+        5.992758954974809
+      ],
+      "min": [
+        -6.9686179605995555,
+        4.086979821535454,
+        -6.464667841581001
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 4678,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 4678,
+      "type": "VEC2"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 33693
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 33696,
+      "byteLength": 27350
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "buffers": [
+    {
+      "name": "GiantPine_2",
+      "byteLength": 61048,
+      "uri": "GiantPine_2.bin"
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression"
+  ]
 }
