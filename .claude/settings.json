@@ -3,7 +3,34 @@
     "allow": [
       "Read(//usr/local/bin/**)",
       "Read(//Users/smimran@zaizi.com/.nvm/versions/node/**)",
-      "Bash(brew list *)"
+      "Bash(brew list *)",
+      "Read(//private/tmp/**)",
+      "Bash(python3)",
+      "Read(//Users/smimran@zaizi.com/Downloads/**)",
+      "Bash(unzip -o \"/Users/smimran@zaizi.com/Downloads/Stylized Nature MegaKit[Pro].zip\" -d \"/Users/smimran@zaizi.com/Downloads/Stylized Nature MegaKit[Pro]\")",
+      "Bash(unzip -l \"/Users/smimran@zaizi.com/Downloads/stylooanimalassetpack.zip\")",
+      "Bash(unzip -l \"/Users/smimran@zaizi.com/Downloads/Archive.zip\")",
+      "Read(//opt/homebrew/opt/**)",
+      "Bash(~/.nvm/versions/node/v20.18.0/bin/node screenshot_map.mjs)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); [print\\(m.get\\('name',''\\),m.get\\('pbrMetallicRoughness',{}\\).get\\('baseColorFactor',''\\)\\) for m in d.get\\('materials',[]\\)]\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); [print\\(m.get\\('name',''\\), [t.get\\('uri',''\\) for t in d.get\\('textures',[]\\)], [img.get\\('uri',''\\) for img in d.get\\('images',[]\\)]\\) for m in d.get\\('materials',[]\\)]\")",
+      "WebFetch(domain:shaderfrog.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:api.github.com)",
+      "Bash(curl -s https://raw.githubusercontent.com/dannygelman1/Wings/main/models/Bird.ts)",
+      "Bash(curl -s \"https://www.kodeclubs.com/\")",
+      "Bash(curl -s https://raw.githubusercontent.com/CK42BB/procedural-clouds-threejs/main/cloud-types.md)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "Bash(curl -s \"https://en.wikipedia.org/api/rest_v1/page/summary/Nine_Arch_Bridge\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d['thumbnail']['source']\\)\")",
+      "Bash(curl -s \"https://en.wikipedia.org/api/rest_v1/page/summary/Leopard\")"
+    ],
+    "additionalDirectories": [
+      "/Users/smimran@zaizi.com/Projects/personal-zone/wonder-land",
+      "/Users/smimran@zaizi.com/Downloads",
+      "/Users/smimran@zaizi.com/Downloads/Free Medieval 3D People Low Poly Pack/fbx/unral_better_export",
+      "/Users/smimran@zaizi.com/Projects/personal-zone/wonder-land/public/places/yala"
     ]
   }
 }

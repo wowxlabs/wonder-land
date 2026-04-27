@@ -1,26 +1,212 @@
 @import "tailwindcss";
 
+/* ── Kodeclubs palette ──────────────────────────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --kode-blue:    #1c228c;
+  --kode-magenta: #f50359;
+  --kode-orange:  #ff4000;
+  --kode-purple:  #7d0e8b;
+  --kode-gold:    #eecd02;
+  --ease-swift:   cubic-bezier(0.55, 0, 0.1, 1);
+  --ease-back:    cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ── Kodeclubs button base ──────────────────────────────────────────────────── */
+.btn-kode {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-bebas), 'Bebas Neue', sans-serif;
+  font-size: 1.15rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 18px 48px;
+  transition:
+    transform 0.35s var(--ease-swift),
+    background-position 0.45s var(--ease-swift),
+    box-shadow 0.35s var(--ease-swift);
+  user-select: none;
+}
+.btn-kode:hover  { transform: rotate(-0.5deg) scale(0.975); }
+.btn-kode:active { transform: rotate(-1deg) scale(0.95); }
+
+.btn-kode-magenta {
+  background: linear-gradient(35deg, var(--kode-magenta) 33%, var(--kode-purple) 66%, #ff6b9d);
+  background-size: 300% 100%;
+  color: #fff;
+  box-shadow: 0 6px 28px rgba(245,3,89,0.45);
+}
+.btn-kode-magenta:hover {
+  background-position: 100% 0;
+  box-shadow: 0 8px 36px rgba(245,3,89,0.6);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.btn-kode-blue {
+  background: linear-gradient(35deg, var(--kode-blue) 33%, #3a44c8 66%, #5c66e8);
+  background-size: 300% 100%;
+  color: #fff;
+  box-shadow: 0 6px 28px rgba(28,34,140,0.45);
+}
+.btn-kode-blue:hover {
+  background-position: 100% 0;
+  box-shadow: 0 8px 36px rgba(28,34,140,0.6);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Round icon button */
+.btn-kode-round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: rgba(255,255,255,0.92);
+  color: var(--kode-blue);
+  font-size: 1.25rem;
+  box-shadow: 0 2px 12px rgba(28,34,140,0.18);
+  transition: transform 0.3s var(--ease-back), background 0.3s var(--ease-swift), box-shadow 0.3s;
+}
+.btn-kode-round:hover  { transform: scale(1.12); box-shadow: 0 4px 20px rgba(28,34,140,0.28); }
+.btn-kode-round:active { transform: scale(0.95); }
+.btn-kode-round.sound-on  { background: var(--kode-gold); color: #1a1200; }
+
+/* ── Kodeclubs spinner ──────────────────────────────────────────────────────── */
+@keyframes kSpinIn {
+  0% { opacity:0; transform:scale3d(0,0,0); }
+  100% { opacity:1; transform:scale3d(1,1,1); }
+}
+@keyframes kSpinSlide {
+  0% { transform:translate3d(0,0,0); }
+  100% { transform:translate3d(28px,0,0); }
+}
+@keyframes kSpinOut {
+  0% { opacity:1; transform:scale3d(1,1,1); }
+  100% { opacity:0; transform:scale3d(0,0,0); }
+}
+
+:root {
+  --color-bg: #050a14;
+  --color-surface: rgba(10, 20, 40, 0.7);
+  --color-border: rgba(100, 180, 255, 0.15);
+  --color-accent: #38bdf8;
+  --color-accent2: #818cf8;
+  --color-glow: rgba(56, 189, 248, 0.4);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #050a14;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #e2e8f0;
+}
+
+.glass {
+  background: rgba(5, 15, 35, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(100, 180, 255, 0.15);
+  border-radius: 12px;
+}
+
+.glow-text { text-shadow: 0 0 20px rgba(56, 189, 248, 0.8); }
+.glow-border { box-shadow: 0 0 20px rgba(56, 189, 248, 0.3), inset 0 0 20px rgba(56, 189, 248, 0.05); }
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.08); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes cloud-pass-wide {
+  from { transform: translate3d(-34vw, var(--cloud-y), 0) scale(var(--cloud-scale)); }
+  to { transform: translate3d(134vw, var(--cloud-y), 0) scale(var(--cloud-scale)); }
+}
+
+.animate-pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+.animate-float { animation: float 3s ease-in-out infinite; }
+.animate-spin-slow { animation: spin-slow 12s linear infinite; }
+.animate-fade-in { animation: fadeIn 0.6s ease-out forwards; }
+
+.bird-eye-cloud-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  overflow: hidden;
+  pointer-events: auto;
+  background:
+    radial-gradient(circle at 50% 44%, rgba(255,255,255,0.28), rgba(255,255,255,0.08) 34%, rgba(135,206,235,0.28) 72%),
+    linear-gradient(180deg, rgba(135,206,235,0.58), rgba(26,111,190,0.18));
+}
+
+.cloud-layer {
+  position: absolute;
+  inset: 0;
+}
+
+.cloud-layer-back {
+  opacity: 0.72;
+  filter: blur(1px);
+}
+
+.cloud-layer-front {
+  opacity: 0.9;
+  filter: blur(0.25px);
+}
+
+.loader-cloud {
+  --cloud-y: 20vh;
+  --cloud-scale: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18rem;
+  height: 5rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.86);
+  box-shadow:
+    3.4rem -1.7rem 0 0.9rem rgba(255,255,255,0.9),
+    7.2rem -2.4rem 0 1.6rem rgba(255,255,255,0.86),
+    11.4rem -1.2rem 0 1.1rem rgba(255,255,255,0.82),
+    14.8rem 0.2rem 0 0.4rem rgba(255,255,255,0.78);
+  animation: cloud-pass-wide var(--cloud-speed) linear infinite;
+}
+
+.cloud-a { --cloud-y: 12vh; --cloud-scale: 0.78; --cloud-speed: 11s; animation-delay: -8s; }
+.cloud-b { --cloud-y: 31vh; --cloud-scale: 1.08; --cloud-speed: 14s; animation-delay: -3s; }
+.cloud-c { --cloud-y: 58vh; --cloud-scale: 0.9; --cloud-speed: 13s; animation-delay: -10s; }
+.cloud-d { --cloud-y: 22vh; --cloud-scale: 1.35; --cloud-speed: 9s; animation-delay: -6s; }
+.cloud-e { --cloud-y: 45vh; --cloud-scale: 1.12; --cloud-speed: 10s; animation-delay: -1.5s; }
+.cloud-f { --cloud-y: 72vh; --cloud-scale: 1.45; --cloud-speed: 12s; animation-delay: -9s; }
+
+.cloud-loader-vignette {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.34), transparent 24%, transparent 76%, rgba(255,255,255,0.28)),
+    radial-gradient(circle at 50% 50%, transparent 42%, rgba(5,10,20,0.14) 100%);
 }
