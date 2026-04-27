@@ -1,4 +1,5 @@
 "use client";
+import "@/lib/threeSetup";
 import { useEffect, useRef, useState, useCallback, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { PerformanceMonitor } from "@react-three/drei";
@@ -103,7 +104,7 @@ export default function Experience() {
     <div style={{ width: "100vw", height: "100vh", position: "fixed", inset: 0 }}>
       {/* Background music */}
       {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
-      <audio ref={audioRef} src="/audio/ambient.m4a" loop preload="auto" />
+      <audio ref={audioRef} src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/audio/ambient.m4a`} loop preload="auto" />
 
       <div style={{ position: "absolute", inset: 0 }}>
         <Canvas

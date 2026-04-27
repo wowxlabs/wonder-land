@@ -2,7 +2,7 @@ let audio: HTMLAudioElement | null = null;
 
 function getAudio(): HTMLAudioElement {
   if (!audio) {
-    audio = new Audio("/audio/hover.wav");
+    audio = new Audio(`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/audio/hover.wav`);
     audio.volume = 0.5;
   }
   return audio;

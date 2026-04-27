@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
   // Remove basePath if you're deploying to username.github.io (root domain)
   basePath: isProd ? "/wonder-land" : "",
   assetPrefix: isProd ? "/wonder-land/" : "",
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? "/wonder-land" : "",
+  },
   transpilePackages: ["three", "@react-three/fiber", "@react-three/drei"],
   turbopack: {},
 };
