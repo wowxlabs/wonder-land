@@ -6,7 +6,7 @@ import { clone as cloneSkeleton } from "three/examples/jsm/utils/SkeletonUtils.j
 import * as THREE from "three";
 import { sampleTerrainHeight } from "@/lib/terrain";
 
-const TEXTURE_PATH = "/models/people/people_texture_map.png";
+const TEXTURE_PATH = "/models/people/people_texture_map.webp";
 
 interface Props {
   modelPath: string;

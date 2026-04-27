@@ -13,5 +13,5 @@ if (typeof window !== "undefined") {
     });
   }
 
-  useGLTF.setDecoderPath(`${BASE}/draco/`);
+  useGLTF.setDecoderPath("/draco/");
 }

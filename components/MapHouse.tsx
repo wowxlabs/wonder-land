@@ -5,7 +5,7 @@ import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader.js";
 import * as THREE from "three";
 import { sampleTerrainHeight } from "@/lib/terrain";
 
-const TEXTURE_PATH = "/models/houses/House_texture_atlas.png";
+const TEXTURE_PATH = "/models/houses/House_texture_atlas.webp";
 
 interface Props {
   modelPath?: string;

@@ -9,7 +9,7 @@ import { sampleTerrainHeight } from "@/lib/terrain";
 import { useExperienceStore } from "@/store/useExperienceStore";
 import { PLACES, Place } from "@/data/places";
 
-const TEXTURE_PATH = "/models/people/people_texture_map.png";
+const TEXTURE_PATH = "/models/people/people_texture_map.webp";
 
 const MOVE_SPEED = 0.40;  // world units / second
 const TURN_SPEED = 2.50;  // radians / second
